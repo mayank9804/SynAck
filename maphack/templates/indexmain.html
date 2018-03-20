@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+<title>Rajasthan Tourism</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta name="keywords" content="Travel Agency Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />-->
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+
+
+<link rel="stylesheet" href="{% static "maphack/css/flexslider.css" %}" type="text/css" media="all" />
+
+<link href="{% static "maphack/css/bootstrap.css" %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static "maphack/css/style.css" %}" rel="stylesheet" type="text/css" media="all" />
+
+<link href="{% static "maphack/css/font-awesome.css" %}" rel="stylesheet">
+<!-- //font-awesome-icons -->
+<!-- googlefonts -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+<!-- //googlefonts -->
+
+</head>
+<body>
+
+<!-- banner -->
+
+
+		<!-- Top-Bar -->
+				<div class="top">
+					<div class="container">
+
+
+							<div class="col-md-6 top-middle">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-md-6 top-left">
+								<ul>
+									<li><i class="fa fa-mobile" aria-hidden="true"></i> 9501658889</li>
+									<li><i class="fa fa-map-marker" aria-hidden="true"></i> Jaipur ,Rajasthan </li>
+								</ul>
+							</div>
+							<div class="clearfix"></div>
+
+					</div>
+				</div>
+				<div class="top-bar">
+				<div class="container">
+					<div class="header">
+						<nav class="navbar navbar-default">
+							<div class="navbar-header navbar-left">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<h1><a class="navbar-brand" href="{% url 'indexmain' %}" >RAJASTHAN<sub style="color: #ed1c47"> &nbspTourism</sub></a></h1>
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+								<nav class="cl-effect-15" id="cl-effect-15">
+									<ul class="nav navbar-nav">
+										<li class="active"><a href="{% url 'indexmain' %}">Home</a></li>
+													<li><a href="#about">About</a></li>
+													<li><a href="#booking.html">Booking</a></li>
+													<li><a href="#gallery.html">Gallery</a></li>
+
+
+                                        <!--
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+														<ul class="dropdown-menu">
+															<li><a href="icons.html">Icons</a></li>
+															<li><a href="typography.html">Typography</a></li>
+														</ul>
+													</li>
+
+
+-->
+													<li><a href="#contact.html">Contact</a></li>
+												</ul>
+
+								</nav>
+							</div>
+						</nav>
+				</div>
+			</div>
+		</div>
+		<!-- //Top-Bar -->
+		<!-- w3-banner -->
+	<div class="banner">
+		<div class="banner-dott1">
+			<div class="w3-banner">
+
+				<div  class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+
+						<div class="banner-text">
+
+
+							<h3>Search the way you never did...</h3>
+<!--
+image to be ...
+							<image style="z-index: -1;height:150px;width: 200px;margin-left:20px;margin-right: 20px " src="./images/red-patterns-damask-1920x1080-37389.jpg"/>
+                            <image style="z-index: -1;height:150px;width: 200px " src="./images/red-patterns-damask-1920x1080-37389.jpg"/>
+
+-->
+<!--                            <p></p>-->
+
+
+
+								<a href="{% url 'Index' %}" class="read-agileits">DIGIGUIDE</a>
+								<a href="#" class="read-agileits" data-toggle="modal" data-target="#myModal">SIGN UP</a>
+
+                        </div>
+					</li>
+					<li>
+						<div class="banner-text">
+
+							<h3>Find Travel Perfection</h3>
+<!--
+image to be..
+							<image style="z-index: -1;height:150px;width: 200px " src="./images/red-patterns-damask-1920x1080-37389.jpg"/>
+                            <image style="z-index: -1;height:150px;width: 200px " src="./images/red-patterns-damask-1920x1080-37389.jpg"/>
+
+-->
+<!--                            <p> write content here </p>-->
+
+
+								<a href="{% url 'Index' %}" class="read-agileits">DIGIGUIDE</a>
+                            <a href="#" class="read-agileits" data-toggle="modal" data-target="#myModal">SIGN UP</a>
+						</div>
+					</li>
+					<li>
+						<div class="banner-text">
+
+							<h3>The Heaven called Rajasthan</h3>
+<!--							<p> write content here </p>-->
+
+                            <a href="{% url 'Index' %}" class="read-agileits">DIGIGUIDE</a>
+	<a href="#" class="read-agileits" data-toggle="modal" data-target="#myModal">SIGN UP</a>s
+                        </div>
+					</li>
+                    <li>
+						<div class="banner-text">
+
+							<h3>Enjoy Your Dream Vacation</h3>
+<!--							<p> write content here </p>-->
+
+
+                            <a href="{% url 'Index' %}" class="read-agileits" >DIGIGUIDE</a>
+                            <a href="#" class="read-agileits" data-toggle="modal" data-target="#myModal">SIGN UP</a>s
+						</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+
+			</div>
+
+		<!-- //w3-banner -->
+		</div>
+	</div>
+<!-- //banner -->
+<div class="two-grids" id="about">
+	<div class="container">
+<div class="wthree_head_section">
+			<h3 class="w3l_header"><span style="color: #ec1347">About</span> DIGIGUIDE</h3>
+			<p></p>
+		</div>
+		<div class="col-md-6 w3_two_grid_right">
+			<div class="w3_two_grid_right1">
+				<div class="col-xs-3 w3_two_grid_right_grid">
+					<div class="w3_two_grid_right_grid1">
+						<i class="fa fa-building" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="col-xs-9 w3_two_grid_right_gridr">
+					<h4>Online Local Guides</h4>
+					<p>Our product brings all those local guides together on an online platform, to address the factor named visibility,
+						the benefit of which is currently taken by privated guides hired by private firms.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3_two_grid_right1" style="margin-top:40px;">
+				<div class="col-xs-3 w3_two_grid_right_grid">
+					<div class="w3_two_grid_right_grid1">
+						<i class="fa fa-plane" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="col-xs-9 w3_two_grid_right_gridr" >
+					<h4>Fixed price for hiring guides as per government schemes</h4>
+					<p>The price comparison between hiring private guides and local guides is not even upto that level where comparison could be done.
+					Our product would fix this price factor for everyone </p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3_two_grid_right1" style="margin-top:40px;">
+				<div class="col-xs-3 w3_two_grid_right_grid">
+					<div class="w3_two_grid_right_grid1">
+						<i class="fa fa-user" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="col-xs-9 w3_two_grid_right_gridr">
+					<h4>Language based local guides</h4>
+					<p>As per a survey, local guides are given training only for Hindi, English, which is also one of the biggest factor why private
+						guides dominates</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="col-md-6 w3_two_grid_right">
+			<div class="w3_two_grid_right1">
+				<div class="col-xs-3 w3_two_grid_right_grid">
+					<div class="w3_two_grid_right_grid1">
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="col-xs-9 w3_two_grid_right_gridr">
+					<h4>Promotions of local guides in private firms.</h4>
+					<p>All leading hotels, package providing companies prefers private guides, but after this platform the local guides would be much visible, which
+						would help them to get connected to private firms.
+					</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3_two_grid_right1">
+				<div class="col-xs-3 w3_two_grid_right_grid">
+					<div class="w3_two_grid_right_grid1">
+						<i class="fa fa-building" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="col-xs-9 w3_two_grid_right_gridr">
+					<h4>Latest technologies</h4>
+					<p>Implementation is done keeping importance of data-exchange in mind. The whole of the product is designed using REST framework
+					which makes data-exchange much easier. This would also help others those can innovate with the idea of this product.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3_two_grid_right1">
+				<div class="col-xs-3 w3_two_grid_right_grid">
+					<div class="w3_two_grid_right_grid1">
+						<i class="fa fa-bus" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="col-xs-9 w3_two_grid_right_gridr">
+					<h4>All state approved guides</h4>
+					<p>All the guides are supposed to be state approved. Most of the private guides, donot even carry a lisence.
+						Our Guides' database would only be touched if the guide is state approved guide. Be it red card holder or green card.
+					</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+<div class="banner-text">
+	<h1 style="text-align:center;">Try Out DIGIGUIDE</h1>
+		<a href="{% url 'Index' %}" class="read-agileits" style="margin-left:40%;">DIGIGUIDE</a>
+
+
+						</div>
+	<!-- advantages -->
+	<div class="two-grids">
+		<div class="container">
+<div class="wthree_head_section">
+				<h3 class="w3l_header"><span style="color: #ec1347">Rajasthan Tourism</span> Provides you best in class</h3>
+				<p></p>
+			</div>
+			<div class="col-md-6 w3_two_grid_right">
+				<div class="w3_two_grid_right1">
+					<div class="col-xs-3 w3_two_grid_right_grid">
+						<div class="w3_two_grid_right_grid1">
+							<i class="fa fa-building" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-9 w3_two_grid_right_gridr">
+						<h4>Live Support</h4>
+						<p>Content will be written soon :\  Mayank Bata</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3_two_grid_right1">
+					<div class="col-xs-3 w3_two_grid_right_grid">
+						<div class="w3_two_grid_right_grid1">
+							<i class="fa fa-plane" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-9 w3_two_grid_right_gridr">
+						<h4>Booking your guides made easier</h4>
+						<p>Content will be written soon :\  Mayank Bata.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3_two_grid_right1">
+					<div class="col-xs-3 w3_two_grid_right_grid">
+						<div class="w3_two_grid_right_grid1">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-9 w3_two_grid_right_gridr">
+						<h4>Seasoned Agents</h4>
+						<p>Content will be written soon :\  Mayank Bata.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="col-md-6 w3_two_grid_right">
+				<div class="w3_two_grid_right1">
+					<div class="col-xs-3 w3_two_grid_right_grid">
+						<div class="w3_two_grid_right_grid1">
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-9 w3_two_grid_right_gridr">
+						<h4>Easy Trip Planning</h4>
+						<p>Content will be written soon :\  Mayank Bata.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3_two_grid_right1">
+					<div class="col-xs-3 w3_two_grid_right_grid">
+						<div class="w3_two_grid_right_grid1">
+							<i class="fa fa-building" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-9 w3_two_grid_right_gridr">
+						<h4>Accommodation</h4>
+						<p>Content will be written soon :\  Mayank Bata.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3_two_grid_right1">
+					<div class="col-xs-3 w3_two_grid_right_grid">
+						<div class="w3_two_grid_right_grid1">
+							<i class="fa fa-bus" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-9 w3_two_grid_right_gridr">
+						<h4>Transportation</h4>
+						<p>Content will be written soon :\  Mayank Bata</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //advantages -->
+
+<!-- banner-bottom -->
+<div class="banner-bottom mid-section-agileits">
+	<div class="col-md-7 bannerbottomleft">
+
+	</div>
+	<div class="col-md-5 bannerbottomright">
+		<h3>A glimpse of Pink City ,Jaipur </h3>
+        <p><span style="font-weight: 700;color: #ed1c47">Jaipur</span> is the capital and the largest city of the Indian state of Rajasthan in Northern India. It was founded on 18 November 1727 by Jai Singh II, the ruler of Amer after whom the city is named.Jaipur is also known as the Pink City of India.Jaipur is a popular tourist destination in India and forms a part of the west Golden Triangle tourist circuit along with Delhi and Agra.<br/><br/>Jaipur is home to two UNESCO World Heritage Sites:<span style="font-weight: 700;color: #ed1c47"> the Jantar Mantar</span> and the <span style="font-weight: 700;color: #ed1c47">Amer Fort.</span></p>
+
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!-- //banner-bottom -->
+<!-- pricing -->
+	<div class="w3ls-section wthree-pricing" id="pricing" style="background: url(/static/maphack/images/red-patterns-damask-1920x1080-37389.jpg)">
+		<div class="container" >
+			<div class="wthree_head_section">
+				<h3 class="w3l_header" style="color: aliceblue;text-shadow: 2px 2px black">Heritage<span style="color: #ffc178;text-shadow: 2px 2px black">ARC</span></h3>
+				<p style="color: azure">Take a Brief look at some of the heritage sites of the mesmerising city Jaipur.</p>
+			</div>
+			<div class="pricing-grids-info">
+								<div class="pricing-grid grid-one">
+									<div class="w3ls-top">
+										<img src="{% static "maphack/images/WhatsApp Image 2018-03-19 at 7.31.55 PM.jpeg" %}" alt="">
+									</div>
+									<div class="w3ls-bottom">
+										<ul class="count">
+											<h3>HAWA MAHEL</h3>
+											<li>heritage</li>
+											<li>...</li>
+											<li>...</li>
+											<li>...</li>
+										</ul>
+										<h4>100 Rupee<!--<span class="sup">$</span>--> </h4>
+										<div class="more">
+											<a href="booking.html">Book Now</a>
+										</div>
+									</div>
+								</div>
+								<div class="pricing-grid grid-two">
+									<div class="w3ls-top">
+										<img src="{% static "maphack/images/WhatsApp Image 2018-03-19 at 5.33.29 PM.jpeg" %}" class="img-responsive" alt="">
+									</div>
+									<div class="w3ls-bottom">
+										<ul class="count">
+											<h3>Amer fort</h3>
+											<li>heritage</li>
+											<li>...</li>
+											<li>...</li>
+											<li>...</li>
+										</ul>
+										<h4>100 Rupee<!--<span class="sup">$</span>--> </h4>										<div class="more">
+											<a href="booking.html">Book Now</a>
+										</div>
+									</div>
+								</div>
+								<div class="pricing-grid grid-three">
+									<div class="w3ls-top">
+										<img src="{% static "maphack/images/WhatsApp Image 2018-03-20 at 10.28.43 AM.jpeg" %}" class="img-responsive" alt="">
+									</div>
+									<div class="w3ls-bottom">
+										<ul class="count">
+											<h3>Jaigarh Fort</h3>
+											<li>heritage</li>
+											<li>...</li>
+											<li>...</li>
+											<li>...</li>
+										</ul>
+										<h4>100 Rupee<!--<span class="sup">$</span>--> </h4>										<div class="more">
+											<a href="booking.html">Book Now</a>
+										</div>
+									</div>
+								</div>
+								<div class="zb pricing-grid grid-four">
+									<div class="w3ls-top">
+										<img src="{%  static 'maphack/images/WhatsApp Image 2018-03-20 at 10.29.31 AM.jpeg' %}" class="img-responsive" alt="">
+									</div>
+									<div class="w3ls-bottom">
+										<ul class="count">
+											<h3>Mueseum</h3>
+											<li>heritage</li>
+											<li>...</li>
+											<li>...</li>
+											<li>...</li>
+										</ul>
+										<h4>100 Rupee<!--<span class="sup">$</span>--> </h4>
+										<div class="more">
+											<a href="booking.html">Book Now</a>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+				<!--End-slider-script-->
+			</div>
+		</div>
+	</div>
+	<!--//pricing-->
+
+	<!-- counter -->
+	<div class="services-bottom stats services">
+	<div class="banner-dott1">
+		<div class="container">
+
+		  <div class="wthree-agile-counter">
+		  <div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid">
+				<div class="agile_count_grid_left">
+					<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter">324</p>
+				</div>
+				<div class="clearfix"> </div>
+				<h4>Transport</h4>
+			</div>
+		</div>
+		<div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid">
+				<div class="agile_count_grid_left">
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter">543</p>
+				</div>
+				<div class="clearfix"> </div>
+				<h4>Happy Clients</h4>
+			</div>
+		</div>
+		<div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid">
+				<div class="agile_count_grid_left">
+					<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter">434</p>
+				</div>
+				<div class="clearfix"> </div>
+				<h4>People Loved</h4>
+			</div>
+		</div>
+		<div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid">
+				<div class="agile_count_grid_left">
+					<span class="fa fa-trophy" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter">234</p>
+				</div>
+				<div class="clearfix"> </div>
+				<h4>Win Awards</h4>
+			</div>
+		</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+</div>
+<!-- //counter -->
+
+
+<!-- Clients -->
+<!--
+<div class="clients">
+<div class="container">
+	<div class="wthree_head_section">
+				<h3 class="w3l_header">What People  <span>Say</span></h3>
+				<p>A travel agency is a private retailer or public service that provides travel and tourism related services to the public on behalf of suppliers such as activities.</p>
+			</div>
+
+
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src="images/c1.jpg" alt="" />
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+								<div class="client">
+									<h5>Gerald Roy</h5>
+								</div>
+						</li>
+						<li>
+							<img src="images/c2.jpg" alt="" />
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+								<div class="client">
+									<h5>Adam Brandom</h5>
+								</div>
+						</li>
+						<li>
+							<img src="images/c3.jpg" alt="" />
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+								<div class="client">
+									<h5>Steve Artur</h5>
+								</div>
+						</li>
+						<li>
+							<img src="images/c4.jpg" alt="" />
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+								<div class="client">
+									<h5>Martin Victor</h5>
+								</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+</div>
+-->
+<!-- //Clients -->
+<!-- footer -->
+	<div class="footer">
+
+
+	<div class="agileinfo_copyright">
+		<p>Designed by SYN_ACK</p>
+	</div>
+<!-- //footer -->
+
+<!-- bootstrap-modal-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					SIGN UP HERE
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+					<div class="modal-body">
+						<img src="{% static 'maphack/images/hawa_mahel.jpg' %}" alt=" " class="img-responsive" />
+                        <!--registration form-->
+
+                        <form class="form_sub">
+
+                        <fieldset>
+    <legend>Rajasthan Tourism:</legend>
+
+                            <div><span>First name:</span>
+    <input type="text" name="firstname" placeholder="Example. yash" class="input_form" style="float: right">
+    </div>
+
+    <div style="clear: both">
+                            <span>Last name:</span>
+    <input type="text" name="lastname" placeholder="Example. singh" class="input_form" style="float: right">
+    </div>
+    <div style="clear: both">
+                            <span>E-mail:</span>
+    <input type="text" name="lastname" placeholder="Souvick@gmail.com" class="input_form" style="float: right">
+    </div>
+    <div class="button_sub" style="clear: both">
+    <input type="submit" value="Submit" >
+        </div>
+  </fieldset>
+
+
+
+                        </form>
+
+
+
+					</div>
+			</div>
+		</div>
+	</div>
+<!-- //bootstrap-modal-pop-up -->
+<!-- js -->
+	<script type="text/javascript" src="{% static "maphack/js/jquery-2.1.4.min.js" %}"></script>
+	<!-- for bootstrap working -->
+	<script src="{% static "maphack/js/bootstrap.js" %}"></script>
+	<!-- //for bootstrap working -->
+<!-- //js -->
+<!-- //here starts scrolling icon -->
+<script src="{% static "maphack/js/SmoothScroll.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "maphack/js/move-top.js" %}"></script>
+	<script type="text/javascript" src="{% static "maphack/js/easing.js" %}"></script>
+	<!-- here stars scrolling script -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+	<!-- //here ends scrolling script -->
+<!-- //here ends scrolling icon -->
+
+<!-- scrolling script -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- //scrolling script -->
+<!-- responsiveslides -->
+<script src="{% static "maphack/js/responsiveslides.min.js" %}"></script>
+			<script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									 // Slideshow 4
+									$("#slider3").responsiveSlides({
+										auto: true,
+										pager: false,
+										nav: true,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+									$('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+										$('.events').append("<li>after event fired.</li>");
+										}
+										});
+										});
+			</script>
+<!-- //responsiveslides -->
+<!-- stats -->
+	<script src="{% static "maphack/js/jquery.waypoints.min.js" %}"></script>
+	<script src="{% static "maphack/js/jquery.countup.js" %}"></script>
+		<script>
+			$('.counter').countUp();
+		</script>
+<!-- //stats -->
+<!-- FlexSlider-JavaScript -->
+
+	<script defer src="{% static "maphack/js/jquery.flexslider.js" %}"></script>
+	<script type="text/javascript">
+
+				$(window).load(function(){
+				$('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+						$('body').removeClass('loading');
+					}
+			});
+		});
+	</script>
+        <script>
+        var images=new Array('static/maphack/images/thumb2-1920-248460-min.jpg','static/maphack/images/rsz_downloaded.jpg');
+
+
+            var nextimage=0;
+            Slideshow();
+
+            function Slideshow()
+            {
+if(nextimage>=images.length){
+    nextimage=0;
+}
+                $('.banner-1,.banner')
+                .css('background','url("'+images[nextimage++]+'")')
+                .fadeIn(5000,function()
+                        {
+setTimeout(Slideshow,3000);
+                });
+
+            }
+
+        </script>
+
+	<!-- //FlexSlider-JavaScript -->
+</body>
+</html>

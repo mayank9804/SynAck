@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, shrink-to-fit=yes">
+    <meta name="author" content="Mayank">
+    <meta name="description" content="A Web Application which will let you search about various events in a way never seen.
+                                        This app uses google map API's and provide you a map to work upon. You can drag
+                                        the map to a particular area and can see the events if any on the map, also this app
+                                        provides you an ability to search by place names, in that case, user just has to
+                                        wait for the map to response with events displayed on it a way never seen before.">
+    <meta name="keywords" content="Hackathon, Event, Map, Location, Search, Google, Youtube">
+    <meta name="application-name" content="Event.SearchIT.com">
+
+    <title>Maps</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+    <!-- https://github.com/corejavascript/typeahead.js/blob/master/doc/jquery_typeahead.md -->
+    <script src="https://cdn.rawgit.com/corejavascript/typeahead.js/master/dist/typeahead.jquery.js"></script>
+
+    <!-- http://handlebarsjs.com/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="{% static "maphack/map.css" %}">
+    <script src="{% static "maphack/map.js" %}"></script>
+  </head>
+  <body>
+    <main>
+        <article class="container-fluid">
+
+                <div id="map-canvas" aria-label="map"></div>
+                <div id="place-input">
+                    <form>
+                      <div class="form-group">
+                        <input type="search" placeholder="City, State, Postal Code" id="q" class="form-control" autocomplete="off"/>
+                      </div>
+                    </form>
+                </div>
+                <div class="mode">
+                <button class="modeSwitchButton buttonMode" id="night-mode">Night Mode</button>
+                </div>
+          
+        </article>
+    </main>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ key | urlencode }}&callback=initMap"></script>
+  </body>
+</html>
