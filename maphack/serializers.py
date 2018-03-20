@@ -8,5 +8,10 @@ class SearchRajasthanSerializer(serializers.ModelSerializer):
 
 class GuidesSerializer(serializers.ModelSerializer):
 
+    def get_img_url(self,obj):
+        return obj.image.url
+
+    image_url = serializers.SerializerMethodField('get_img_url')
+
     class Meta:
         model = Guides
